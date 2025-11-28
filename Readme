@@ -1,2 +1,30 @@
 Readme
-Test
+
+ERC721 Smart Contract Implementation
+Description
+This project is a manual implementation of the ERC721 Non-Fungible Token (NFT) standard using Solidity. It was created for a Blockchain subject assignment to demonstrate how NFT ownership, transfers, and approvals work under the hood without using external libraries.
+
+Features
+Standard Implementation: Full compliance with the IERC721 interface.
+
+Core Logic: Implements transferFrom, approve, and setApprovalForAll using raw mappings.
+
+Safety: Includes safeTransferFrom to check if the receiver is a valid contract using extcodesize and the onERC721Received selector.
+
+Testing: Includes a custom mint function to create tokens for testing purposes.
+
+Technical Details
+Language: Solidity ^0.8.0
+
+IDE: Remix
+
+Storage: Uses mappings for _owners, _balances, and approvals.
+
+How to Run
+Open the files in Remix IDE.
+
+Compile MyNFT.sol.
+
+Deploy using the Remix VM (Cancun) environment.
+
+Mint a token to your address and test the transfer functions.
